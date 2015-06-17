@@ -12,6 +12,7 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <!-- endbuild -->
   </head>
   <body ng-app="soulfitApp">
@@ -40,6 +41,7 @@
             <ul class="nav navbar-nav">
               <li class="active"><a href="#/">Home</a></li>
               <li><a ng-href="#/about">About</a></li>
+              <li><a ng-href="#/dashboard">Dashboard</a></li>
               <li><a ng-href="#/">Contact</a></li>
             </ul>
           </div>
@@ -87,6 +89,8 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/dashboard.js"></script>
+        <script src="scripts/services/soulfitdata.js"></script>
         <!-- endbuild -->
 </body>
 </html>

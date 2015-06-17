@@ -1,23 +1,27 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
+<div ng-controller="MainCtrl">
+  <div class="jumbotron">
+    <h1>SoulFit Challenge</h1>
+    <p class="lead">
+      <img ng-src="images/soulfit-challenge.jpg" alt="SoulFit" width="100px"><br>
+      Are you ready?
+    </p>
+    <p><a class="btn btn-lg btn-success" ng-href="#/">Success!<span class="glyphicon glyphicon-ok"></span></a></p>
+  </div>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+        <div class="row">
+          <div class="col-lg-4" ng-repeat="category in categories">
+            <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>{{ category.name }}</h2>
+            <p>{{ category.description }}</p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          </div>
+        </div><!-- /.row -->
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+  <div class="row marketing" ng-repeat="soul in souls">
+    <h4>{{ soul.name }}</h4>
+    <p>{{ soul.verses }}</p>
+  </div>
+<pre>
+  {{ souls | json }}
+</pre>
 </div>
