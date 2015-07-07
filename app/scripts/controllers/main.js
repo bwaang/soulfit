@@ -37,65 +37,62 @@ angular.module('soulfitApp')
 
     $scope.souls = [
 	    {
-	        name: 'Neil', 
-	        verses: 40, 
-	        pages: 20, 
+	        name: 'Neil',
+	        verses: 40,
+	        pages: 20,
 	        books: 6
 	    },
 	    {
-	        name: 'Kevin', 
-	        verses: 92, 
-	        pages: 20, 
+	        name: 'Kevin',
+	        verses: 92,
+	        pages: 20,
 	        books: 6
 	    },
 	    {
-	        name: 'Hans', 
-	        verses: 40, 
-	        pages: 20, 
+	        name: 'Hans',
+	        verses: 40,
+	        pages: 20,
 	        books: 6
-	    }, 
+	    },
 	    {
-	        name: 'Jasper', 
-	        verses: 40, 
-	        pages: 20, 
+	        name: 'Jasper',
+	        verses: 40,
+	        pages: 20,
 	        books: 6
-	    }, 
+	    },
 	    {
-	        name: 'Tony', 
-	        verses: 30, 
-	        pages: 20, 
+	        name: 'Tony',
+	        verses: 30,
+	        pages: 20,
 	        books: 6
-	    }, 
+	    },
 	    {
-	        name: 'Audrey', 
-	        verses: 40, 
-	        pages: 20, 
+	        name: 'Audrey',
+	        verses: 40,
+	        pages: 20,
 	        books: 62
-	    }, 
+	    },
 	    {
-	        name: 'Sam', 
-	        verses: 40, 
-	        pages: 20, 
+	        name: 'Sam',
+	        verses: 40,
+	        pages: 20,
 	        books: 61
-	    },  
+	    },
 	    {
-	        name: 'Ching', 
-	        verses: 40, 
-	        pages: 20, 
+	        name: 'Ching',
+	        verses: 40,
+	        pages: 20,
 	        books: 61
-	    }, 
+	    },
 	    {
-	        name: 'Taipei', 
-	        verses: 40, 
-	        pages: 20, 
+	        name: 'Taipei',
+	        verses: 40,
+	        pages: 20,
 	        books: 61
 	    }
 	];
 
-    $scope.size = 200;
-    $scope.progress = 0.60;
-    $scope.strokeWidth = 25;
-    $scope.stroke = '#d70';
-    $scope.counterClockwise = '';
-            
+  $scope.size = 200;
+  $scope.progress = 0.60;
+
   }]);
