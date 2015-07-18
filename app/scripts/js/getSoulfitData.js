@@ -26,5 +26,5 @@ function sanitizeSoulfitDataJSON(soulfitData) {
     }
     jsonString = JSON.stringify(jsonData, null, 2)
     $("#result").html(jsonString)
-    return jsonString
+    return jsonData
 }

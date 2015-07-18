@@ -48,6 +48,13 @@ module.exports = function (grunt) {
         files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
         tasks: ['newer:copy:styles', 'autoprefixer']
       },
+      less: {
+        files: ['<%= yeoman.app %>/styles/{,*/}*.less'],
+        tasks: ['less'],
+        options: {
+          livereload: '<%= connect.options.livereload %>'
+        }
+      },
       gruntfile: {
         files: ['Gruntfile.js']
       },
@@ -280,6 +287,20 @@ module.exports = function (grunt) {
       }
     },
 
+    // Compiles Less into CSS and places it into the right location
+    less: {
+      development: {
+        options: {
+          compress: false,
+          optimization: 2
+        },
+        files: [{
+          src: '<%= yeoman.app %>/styles/less/main.less',
+          dest: '<%= yeoman.app %>/styles/main.css'
+        }]
+      }
+    },
+
     svgmin: {
       dist: {
         files: [{
@@ -401,6 +422,7 @@ module.exports = function (grunt) {
       'concurrent:server',
       'autoprefixer:server',
       'connect:livereload',
+      'less',
       'watch'
     ]);
   });

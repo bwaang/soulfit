@@ -42,7 +42,8 @@ angular
     $scope.topnav = ['Dashboard', 'About', 'Testing'];
     $scope.sidenav = ['Dashboard', 'About', 'Graphs', 'Testing'];
     $scope.activeClass = function (navroute) {
-      if ($route.current.activeroute === navroute)
+      if ($route.current.activeroute === navroute) {
         return 'active';
+      }
     }
   }]);

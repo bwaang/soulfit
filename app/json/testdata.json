@@ -1,56 +1,546 @@
 [
-    {
-        "name": "Neil", 
-        "verses": 40, 
-        "pages": 20, 
-        "books": 6
-    },
-    {
-        "name": "Kevin", 
-        "verses": 92, 
-        "pages": 20, 
-        "books": 6
-    },
-    {
-        "name": "Hans", 
-        "verses": 40, 
-        "pages": 20, 
-        "books": 6
-    }, 
-    {
-        "name": "Jasper", 
-        "verses": 40, 
-        "pages": 20, 
-        "books": 6
-    }, 
-    {
-        "name": "Tony", 
-        "verses": 30, 
-        "pages": 20, 
-        "books": 6
-    }, 
-    {
-        "name": "Audrey", 
-        "verses": 40, 
-        "pages": 20, 
-        "books": 62
-    }, 
-    {
-        "name": "Sam", 
-        "verses": 40, 
-        "pages": 20, 
-        "books": 61
-    },  
-    {
-        "name": "Ching", 
-        "verses": 40, 
-        "pages": 20, 
-        "books": 61
-    }, 
-    {
-        "name": "Taipei", 
-        "verses": 40, 
-        "pages": 20, 
-        "books": 61
-    }
+  {
+    "timestamp": "6/19/2015 0:36:15",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 0,
+    "chapters": 0,
+    "running": 36
+  },
+  {
+    "timestamp": "6/19/2015 11:15:55",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 0,
+    "chapters": 1,
+    "running": 0
+  },
+  {
+    "timestamp": "6/19/2015 17:08:08",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 35,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "6/19/2015 20:25:11",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 61,
+    "chapters": 3,
+    "running": 0
+  },
+  {
+    "timestamp": "6/19/2015 23:59:13",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 0,
+    "chapters": 0,
+    "running": 120
+  },
+  {
+    "timestamp": "6/20/2015 0:16:26",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 97,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "6/20/2015 1:14:00",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 0,
+    "chapters": 0,
+    "running": 120
+  },
+  {
+    "timestamp": "6/20/2015 9:26:37",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 92,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "6/20/2015 13:46:39",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 0,
+    "chapters": 2,
+    "running": 120
+  },
+  {
+    "timestamp": "6/20/2015 13:46:53",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 0,
+    "chapters": 2,
+    "running": 0
+  },
+  {
+    "timestamp": "6/20/2015 13:53:20",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 0,
+    "chapters": 2,
+    "running": 0
+  },
+  {
+    "timestamp": "6/20/2015 19:20:44",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 30,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "6/20/2015 21:33:50",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 0,
+    "chapters": 3,
+    "running": 0
+  },
+  {
+    "timestamp": "6/21/2015 0:22:26",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 0,
+    "chapters": 10,
+    "running": 0
+  },
+  {
+    "timestamp": "6/21/2015 17:15:16",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 80,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "6/21/2015 17:18:10",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 0,
+    "chapters": 4,
+    "running": 0
+  },
+  {
+    "timestamp": "6/21/2015 21:49:08",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 20,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "6/21/2015 22:16:22",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 31,
+    "chapters": 1,
+    "running": 0
+  },
+  {
+    "timestamp": "6/21/2015 23:21:22",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 0,
+    "chapters": 8,
+    "running": 0
+  },
+  {
+    "timestamp": "6/22/2015 0:48:48",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 120,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "6/22/2015 11:24:45",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 0,
+    "chapters": 5,
+    "running": 0
+  },
+  {
+    "timestamp": "6/22/2015 19:55:46",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 10,
+    "chapters": 0,
+    "running": 12
+  },
+  {
+    "timestamp": "6/22/2015 21:11:32",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 82,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "6/22/2015 21:21:48",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 34,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "6/23/2015 11:26:02",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 70,
+    "chapters": 2,
+    "running": 0
+  },
+  {
+    "timestamp": "6/23/2015 11:30:25",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 0,
+    "chapters": 0,
+    "running": 2
+  },
+  {
+    "timestamp": "6/23/2015 12:13:56",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 80,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "6/23/2015 19:16:57",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 0,
+    "chapters": 3,
+    "running": 0
+  },
+  {
+    "timestamp": "6/23/2015 23:44:19",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 0,
+    "chapters": 6,
+    "running": 0
+  },
+  {
+    "timestamp": "6/23/2015 23:47:06",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 0,
+    "chapters": 1,
+    "running": 0
+  },
+  {
+    "timestamp": "6/24/2015 0:24:59",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 100,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "6/24/2015 5:35:51",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 22,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "6/24/2015 5:47:42",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 22,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "6/24/2015 6:13:09",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 0,
+    "chapters": null,
+    "running": 0
+  },
+  {
+    "timestamp": "6/24/2015 10:28:41",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 75,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "6/24/2015 12:52:16",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 0,
+    "chapters": 0,
+    "running": 30
+  },
+  {
+    "timestamp": "6/24/2015 14:54:08",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 0,
+    "chapters": 2,
+    "running": 0
+  },
+  {
+    "timestamp": "6/24/2015 21:51:15",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 39,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "6/25/2015 23:59:30",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 45,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "6/26/2015 16:24:06",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 102,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "6/27/2015 21:04:23",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 4,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "6/29/2015 11:27:08",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 67,
+    "chapters": 2,
+    "running": 20
+  },
+  {
+    "timestamp": "6/30/2015 0:07:57",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 70,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "6/30/2015 11:44:46",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 0,
+    "chapters": 0,
+    "running": 30
+  },
+  {
+    "timestamp": "6/30/2015 22:10:37",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 0,
+    "chapters": 0,
+    "running": 60
+  },
+  {
+    "timestamp": "6/30/2015 22:17:17",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 9,
+    "chapters": 0,
+    "running": 110
+  },
+  {
+    "timestamp": "7/1/2015 14:05:39",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 0,
+    "chapters": 0,
+    "running": 80
+  },
+  {
+    "timestamp": "7/1/2015 23:56:41",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 0,
+    "chapters": 0,
+    "running": 180
+  },
+  {
+    "timestamp": "7/4/2015 11:00:30",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 19,
+    "chapters": 0,
+    "running": 30
+  },
+  {
+    "timestamp": "7/5/2015 4:09:12",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 118,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "7/6/2015 21:49:49",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 0,
+    "chapters": 0,
+    "running": 20
+  },
+  {
+    "timestamp": "7/8/2015 13:39:32",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 78,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "7/8/2015 18:03:45",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 37,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "7/9/2015 16:48:42",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 19,
+    "chapters": 0,
+    "running": 30
+  },
+  {
+    "timestamp": "7/10/2015 12:14:44",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 0,
+    "chapters": 0,
+    "running": 20
+  },
+  {
+    "timestamp": "7/10/2015 12:15:05",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 0,
+    "chapters": 0,
+    "running": 20
+  },
+  {
+    "timestamp": "7/10/2015 15:31:28",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 37,
+    "chapters": 0,
+    "running": 30
+  },
+  {
+    "timestamp": "7/10/2015 16:50:45",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 8,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "7/11/2015 18:35:33",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 226,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "7/12/2015 13:17:13",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 22,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "7/12/2015 19:05:25",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 268,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "7/12/2015 22:43:23",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 0,
+    "chapters": 0,
+    "running": 80
+  },
+  {
+    "timestamp": "7/12/2015 23:42:42",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 19,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "7/13/2015 2:12:35",
+    "gender": "brother",
+    "name": "Test Brother",
+    "pages": 100,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "7/14/2015 9:20:07",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 81,
+    "chapters": 0,
+    "running": 30
+  },
+  {
+    "timestamp": "7/14/2015 23:48:58",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 13,
+    "chapters": 0,
+    "running": 0
+  },
+  {
+    "timestamp": "7/15/2015 21:32:23",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 0,
+    "chapters": 0,
+    "running": 30
+  },
+  {
+    "timestamp": "7/16/2015 16:25:27",
+    "gender": "brother",
+    "name": "Test Sister",
+    "pages": 74,
+    "chapters": 0,
+    "running": 180
+  }
 ]
