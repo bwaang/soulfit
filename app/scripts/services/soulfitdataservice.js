@@ -11,7 +11,9 @@ angular.module('soulfitApp')
   .service('soulfitDataService', ['$http', function ($http) {
     // AngularJS will instantiate a singleton by calling 'new' on this function
     var soulScope = this; // soulScope preserves 'this' scope for internal use
-    soulScope.soulfitData;
+    soulScope.soulfitData = undefined;
+    soulScope.ctData = undefined;
+    soulScope.ctTimeData = undefined;
 
     /**
      * Generic strToInt function
@@ -26,6 +28,7 @@ angular.module('soulfitApp')
       $http.get(url)
             .success(function(data) {
               soulScope.soulfitData = soulScope.sanitizeSoulfitDataJSON(data);
+              soulScope.generateChartistData(soulScope.soulfitData);
             })
             .error(function(err) {
               console(err);
@@ -60,5 +63,20 @@ angular.module('soulfitApp')
         }
       }
       return jsonData;
+    };
+
+    soulScope.filterByName = function(name, soulfitData) {
+      var jsonData = {};
+      // Write code here to filter out people by name
+
+      return jsonData;
+    };
+
+    soulScope.generateChartistData = function(soulfitData) {
+      // Write code here to generate Chartist Data to the below
+      // See the Chartist API at https://gionkunz.github.io/chartist-js/
+
+      soulScope.ctData = {};
+      soulScope.ctTimeData = {};
     };
   }]);

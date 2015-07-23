@@ -3,72 +3,31 @@
     <h1>SoulFit Challenge</h1>
     <p class="lead">
       <img ng-src="images/soulfit-challenge.jpg" alt="SoulFit" width="100px"><br />
-      Testing Sandbox
+      Sandbox Testing
     </p>
-    <p><a class="btn btn-lg btn-success" ng-href="#/">I'm in! <span class="glyphicon glyphicon-thumbs-up"></span></a></p>
   </div>
 
-  <div class="row">
-    <div class="col-lg-4" ng-repeat="category in categories">
-      <h2>{{ category.name }}</h2>
-      <p>{{ category.description }}</p>
-      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+  <!-- this is just dummy data -->
+  <div class="container-fluid">
+    <div class="row">
+      <chartist class="col-lg-6 col-xs-12 ct-chart ct-golden-section" chartist-data="chartTestData" chartist-chart-options="chartoptions" chartist-chart-type="Line"></chartist>
+      <chartist class="col-lg-6 col-xs-12 ct-chart ct-golden-section" chartist-data="chartTestData" chartist-chart-options="chartoptions" chartist-chart-type="Bar"></chartist>
     </div>
   </div>
 
-  <div class="row ct-chart-bar ct-golden-section"></div>
-  <div class="row ct-chart ct-octave"></div>
-  <div class="row ct-chart-pie ct-golden-section"></div>
+  <div class="container-fluid">
+    <div class="row input-group">
+      <span class="input-group-addon" id="basic-addon1"><span class="fa fa-user"></span></span>
+      <input ng-model="personName" type="text" class="form-control" placeholder="Search By: Full Name" aria-describeby="basic-addon1">
+    </div>
+  </div>
 
-<small>This is for debugging purposes local data: </small>
-<pre>
-  {{ data | json }}
-</pre>
-
-<small>This is for debugging purposes data from service: </small>
-<pre>
-  {{ sds.soulfitData | json  }}
-</pre>
-
-  <!-- Chartist:: inline demo js -->
-  <script type="text/javascript">
-    var piedata = {
-      labels: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
-      series: [2, 3, 4, 3, 2, 3, 5, 8, 9, 8, 6, 5]
-    }
-
-    var chartdata = {
-      labels: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
-      series: [
-        [2, 3, 4, 3, 2, 3, 5, 8, 9, 8, 6, 5],
-        [0, 1, 2, 4, 3, 2, 2, 4, 7, 9, 8, 7],
-        [1, 2, 3, 2, 1, 2, 3, 3, 4, 6, 4, 3]
-      ]
-    };
-
-    var chartoptions = {
-      seriesBarDistance: 30,
-      stackBars: false,
-      showArea: true,
-      lineSmooth: true,
-      showPoint: false,
-      axisX: {
-        showGrid: true
-      },
-      axisY: {
-        scaleMinSpace: 30
-      }
-    };
-
-    var pieoptions = {
-      donut: true,
-      donutWidth: 60
-    }
-
-    var chartBar = new Chartist.Bar('.ct-chart-bar', chartdata, chartoptions);
-    var chartLine = new Chartist.Line('.ct-chart', chartdata, chartoptions);
-    var chartPie = new Chartist.Pie('.ct-chart-pie', piedata, pieoptions);
-
-  </script>
+  <small>This is for debugging purposes local data: </small>
+  <pre>
+    {{ sds.soulfitData | json }}
+  </pre>
+  <pre>
+    {{ sds.ctData | json }}
+  </pre>
 
 </div>

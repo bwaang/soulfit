@@ -15,13 +15,14 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'angular-chartist'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/dashboard.html',
-        controller: 'DashboardCtrl',
+        controller: 'MainCtrl',
         activeroute: 'Dashboard'
       })
       .when('/about', {
@@ -40,10 +41,10 @@ angular
   })
   .controller('IndexCtrl', ['$scope', '$route', function($scope, $route) {
     $scope.topnav = ['Dashboard', 'About', 'Testing'];
-    $scope.sidenav = ['Dashboard', 'About', 'Graphs', 'Testing'];
+    $scope.sidenav = ['Dashboard', 'About', 'Testing'];
     $scope.activeClass = function (navroute) {
-      if ($route.current.activeroute === navroute) {
+      if ($route.current !== undefined && $route.current.activeroute === navroute) {
         return 'active';
       }
-    }
+    };
   }]);

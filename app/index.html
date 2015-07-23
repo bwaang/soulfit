@@ -10,6 +10,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="bower_components/chartist/dist/chartist.min.css" />
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -57,8 +58,8 @@
             <li><a href=""><span class="glyphicon glyphicon-save-file"></span> Export</a></li>
           </ul>
           <ul class="nav nav-sidebar">
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href=""><span class="fa fa-user-plus"></span> About</a></li>
+            <li><a href=""><span class="fa fa-user-secret"></span> Contact</a></li>
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
@@ -94,6 +95,7 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/chartist/dist/chartist.min.js"></script>
+    <script src="bower_components/angular-chartist.js/dist/angular-chartist.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -102,9 +104,6 @@
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/dashboard.js"></script>
-        <script src="scripts/services/soul.js"></script>
-        <script src="scripts/services/book.js"></script>
-        <script src="scripts/js/getSoulFitData.js"></script>
         <script src="scripts/services/soulfitdataservice.js"></script>
         <!-- endbuild -->
 </body>
