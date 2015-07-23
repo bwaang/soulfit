@@ -46,14 +46,11 @@ module.exports = function (grunt) {
       },
       styles: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
-        tasks: ['newer:copy:styles', 'autoprefixer']
+        tasks: ['newer:copy:styles', 'postcss']
       },
       less: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.less'],
-        tasks: ['less'],
-        options: {
-          livereload: '<%= connect.options.livereload %>'
-        }
+        tasks: ['less']
       },
       gruntfile: {
         files: ['Gruntfile.js']
@@ -156,14 +153,30 @@ module.exports = function (grunt) {
       server: '.tmp'
     },
 
+    // Compiles Less into CSS and places it into the right location
+    less: {
+      development: {
+        options: {
+          compress: false,
+          optimization: 2
+        },
+        files: [{
+          src: '<%= yeoman.app %>/styles/less/main.less',
+          dest: '<%= yeoman.app %>/styles/main.css'
+        }]
+      }
+    },
+
     // Add vendor prefixed styles
-    autoprefixer: {
+    postcss: {
       options: {
-        browsers: ['last 1 version']
+        processors: [
+          require('autoprefixer-core')({browsers: ['last 1 version']})
+        ]
       },
       server: {
         options: {
-          map: true,
+          map: true
         },
         files: [{
           expand: true,
@@ -287,20 +300,6 @@ module.exports = function (grunt) {
       }
     },
 
-    // Compiles Less into CSS and places it into the right location
-    less: {
-      development: {
-        options: {
-          compress: false,
-          optimization: 2
-        },
-        files: [{
-          src: '<%= yeoman.app %>/styles/less/main.less',
-          dest: '<%= yeoman.app %>/styles/main.css'
-        }]
-      }
-    },
-
     svgmin: {
       dist: {
         files: [{
@@ -420,9 +419,8 @@ module.exports = function (grunt) {
       'clean:server',
       'wiredep',
       'concurrent:server',
-      'autoprefixer:server',
+      'postcss:server',
       'connect:livereload',
-      'less',
       'watch'
     ]);
   });
@@ -436,7 +434,8 @@ module.exports = function (grunt) {
     'clean:server',
     'wiredep',
     'concurrent:test',
-    'autoprefixer',
+    'less',
+    'postcss',
     'connect:test',
     'karma'
   ]);
@@ -446,7 +445,8 @@ module.exports = function (grunt) {
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
-    'autoprefixer',
+    'less',
+    'postcss',
     'concat',
     'ngAnnotate',
     'copy:dist',
