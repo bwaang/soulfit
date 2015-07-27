@@ -6764,6 +6764,16 @@ button.close {
     display: none !important;
   }
 }
+/*
+@brand-primary:         @gray;
+@brand-success:         #ECD078;
+@brand-info:            #53777a;
+@brand-warning:         #f0ad4e;
+@brand-danger:          darken(#C02942, 20%);
+
+@font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+*/
+/* Variables */
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -6841,6 +6851,9 @@ body {
 /*
  * Base structure
  */
+/*
+ * Variables
+ */
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px;
@@ -6850,7 +6863,7 @@ body {
  */
 .sub-header {
   padding-bottom: 10px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #dddddd;
 }
 /*
  * Top navigation
@@ -6858,6 +6871,7 @@ body {
  */
 .navbar-fixed-top {
   border: 0;
+  border-bottom: 1px solid #dddddd;
 }
 /*
  * Sidebar
@@ -6879,8 +6893,13 @@ body {
     overflow-y: auto;
     /* Scrollable contents if viewport is shorter than content. */
     background-color: #ffffff;
-    border-right: 1px solid #eeeeee;
+    border-right: 1px solid #dddddd;
   }
+}
+/* Use as a mixin */
+.nav-active-link {
+  color: #ffffff;
+  background-color: #28a1c5;
 }
 /* Sidebar navigation */
 .nav-sidebar {
@@ -6895,13 +6914,14 @@ body {
 }
 .nav-sidebar > li > a:hover,
 .nav-sidebar > li > a:focus {
-  background-color: ligten(#5cb85c, 40%);
+  color: #ffffff;
+  background-color: #28a1c5;
 }
 .nav-sidebar > .active > a,
 .nav-sidebar > .active > a:hover,
 .nav-sidebar > .active > a:focus {
   color: #ffffff;
-  background-color: #5cb85c;
+  background-color: #28a1c5;
 }
 /*
  * Main content
