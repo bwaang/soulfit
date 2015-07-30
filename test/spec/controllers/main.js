@@ -16,7 +16,12 @@ describe('Controller: MainCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('should chartData and chartOptions in scope', function () {
+    expect(scope.chartoptions).toBeDefined();
+    expect(scope.chartTestData).toBeDefined();
+  });
+
+  it('should create a soulfitdata service', function () {
+    expect(scope.sds).toBeDefined();
   });
 });
