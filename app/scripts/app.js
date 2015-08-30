@@ -16,7 +16,7 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'angular-chartist'
+    'angular-smart-chartist'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -35,13 +35,18 @@ angular
         controller: 'MainCtrl',
         activeroute: 'Testing'
       })
+      .when('/verses', {
+        templateUrl: 'views/verses.html',
+        controller: 'VersesCtrl',
+        activeroute: 'Verses'
+      })
       .otherwise({
         redirectTo: '/'
       });
   })
   .controller('IndexCtrl', ['$scope', '$route', function($scope, $route) {
-    $scope.topnav = ['Dashboard', 'About', 'Testing'];
-    $scope.sidenav = ['Dashboard', 'About', 'Testing'];
+    $scope.topnav = ['Dashboard', 'About', 'Testing', 'Verses'];
+    $scope.sidenav = ['Dashboard', 'About', 'Testing', 'Verses'];
     $scope.activeClass = function (navroute) {
       if ($route.current !== undefined && $route.current.activeroute === navroute) {
         return 'active';

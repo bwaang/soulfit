@@ -13,30 +13,36 @@ angular.module('soulfitApp')
     $scope.sds = soulfitDataService; // Stores data from $scope.sds.soulfitData
     var dataUrl = 'https://spreadsheets.google.com/feeds/list/1zWeJSlmhone9MzwoUNxCFzBIySOMEo8OoGhClgZLGS4/default/public/values?alt=json';
     var localJSONData = 'json/testdata.json';
+    $scope.samCho = 'How are you';
 
     $scope.chartTestData = {
-        labels: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
-        series: [
-          [2, 3, 4, 3, 2, 3, 5, 8, 9, 8, 6, 5],
-          [0, 1, 2, 4, 3, 2, 2, 4, 7, 9, 8, 7],
-          [1, 2, 3, 2, 1, 2, 3, 3, 4, 6, 4, 3]
-        ]
-      };
+      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      series: [
+        [5, 4, 3, 7, 5, 10, 3, 4, 8, 10, 6, 8],
+        [3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4]
+      ]
+    };
+
+    $scope.lineData = {
+        labels: ['1', '2', '3', '4', '5', '6'],
+        series: [{
+            name: 'Fibonacci sequence',
+            data: [1, 2, 3, 5, 8, 13]
+        }, {
+            name: 'Golden section',
+            data: [1, 1.618, 2.618, 4.236, 6.854, 11.09]
+        }]
+    };
 
     $scope.chartoptions = {
       fullWidth: true,
       seriesBarDistance: 20,
       stackBars: true,
-      lineSmooth: true,
-      axisX: {
-        showGrid: true
-      },
-      axisY: {
-        scaleMinSpace: 30
-      }
+      lineSmooth: true
     };
 
-    $scope.sds.setSoulfitDataFromUrl(dataUrl); // setting data internally to $scope.sds.soulfitData
+    $scope.sds.setSoulfitDataFromUrl(dataUrl);
+    // setting data internally to $scope.sds.soulfitData
 
     // Use a callback to fetch data into the $scope variable
     $scope.sds.getJSON(localJSONData, function(data) {

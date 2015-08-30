@@ -7,16 +7,21 @@
 
 // Examples of overriding LESS variables
 // See http://getbootstrap.com/css/#less for full list or variables
+@red: #ff0000;
 
-/*
-@brand-primary:         @gray;
-@brand-success:         #ECD078;
-@brand-info:            #53777a;
-@brand-warning:         #f0ad4e;
-@brand-danger:          darken(#C02942, 20%);
+.input-group {
+  margin-bottom: 20px;
+}
 
-@font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-*/
+.tooltip { // Fix for the tooltip
+  .h5;
+  opacity: 0.95;
+  color: @gray-lighter;
+}
+
+.tooltip-arrow { // Fix for the arrow
+  border-top: 15px solid #608BD6;
+}
 
 // Custom components
 @import "layout.less";
